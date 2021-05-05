@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include "./headers/Player.hpp";
-#include "./headers/Demineur.hpp"
+#include "./Player.hpp"
+#include "./Demineur.hpp"
 
 using namespace std;
 

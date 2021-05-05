@@ -35,12 +35,12 @@ void DemineurBoard::affiche()
 {
 
     for (unsigned short i = 0; i < Difficulty::getWidth(); i++)
-        cout << "+--+"; // 1ere ligne
+        cout << i ;
     for (unsigned short j = 0; j < Difficulty::getLength(); j++)
     {
         for (unsigned short i = 0; i < Difficulty::getWidth(); i++)
         {
-            cout << Board[i][j].getNum() << "|";
+            cout << Board[i][j].getStatus() << "|";
         }
     }
 }

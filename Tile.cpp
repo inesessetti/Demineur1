@@ -65,3 +65,7 @@ void Tile::setnum(int x)
 {
     num=x;
 };
+char Tile::getStatus()
+{
+    return status;
+}

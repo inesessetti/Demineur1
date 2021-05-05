@@ -9,8 +9,8 @@
 #include <string>
 using namespace std;
 
-typedef list<pair<unsigned short, unsigned short>> coupleList;
 typedef vector< tuple<int,int> > tuple_list;
+
 
 class DemineurBoard : public Difficulty, public Tile
 {

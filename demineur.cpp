@@ -22,7 +22,7 @@ void Demineur::endTheGame()
     //popup ll the game is over
 };
 
-/*void Demineur::Begin() //compteur yebda ye7seb l wa9t
+void Demineur::Begin() //compteur yebda ye7seb l wa9t
 {
     Timer timer = Timer::Instance();
     bool isRunning = True;
@@ -30,21 +30,24 @@ void Demineur::endTheGame()
     {
         return (timer->calcul());
     }
-    //if (hasEnded)
-    // isRunning= false
-}*/
+    if (hasEnded)
+    isRunning= false
+}
 
 
 bool Demineur::move()
 {
-    bool clic=false;
+    Tile Board[DemineurBoard::getLength()][DemineurBoard::getWidth()];
     int i;
     int j;
     cout << "Ligne : ";
     cin >> i;
     cout << "Colonne : ";
     cin >> j;
-    if ()
+    if (Board[i][j].isPlayed())
+    return false;
+    else
+    return true;
 }
 
 

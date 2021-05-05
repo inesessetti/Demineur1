@@ -27,6 +27,7 @@ class Tile {
     unsigned short getNum();
     unsigned short getX();
     unsigned short getY();
+    char getStatus();
     void visible();
 
     //setters
