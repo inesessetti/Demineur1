@@ -35,12 +35,12 @@ void DemineurBoard::affiche()
 {
 
     for (unsigned short i = 0; i < Difficulty::getWidth(); i++)
-        cout << i ;
+        cout << " "<<i << " " ;
     for (unsigned short j = 0; j < Difficulty::getLength(); j++)
     {
         for (unsigned short i = 0; i < Difficulty::getWidth(); i++)
         {
-            cout << Board[i][j].getStatus() << "|";
+            cout << Board[i][j].getStatus() << " | ";
         }
     }
 }
@@ -146,4 +146,10 @@ void DemineurBoard::setNum()
             num = 0;
         }
     }
+}
+int main()
+{
+    DemineurBoard B;
+    B.create();
+    B.affiche();
 }
